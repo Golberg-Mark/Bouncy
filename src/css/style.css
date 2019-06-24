@@ -1,0 +1,306 @@
+*{
+    font-family: 'Kodchasan', 'Arial', sans-serif;
+}
+
+body{
+    background-color: #ECF0F1;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    color: #333;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    text-align: center;
+    background-image: url(../img/header-bg.png);
+    background-size: cover;
+}
+
+.header-title{
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.header-slogan{
+    margin-bottom: 120px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.header-arrow{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    font-family: Arial;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #19bd9a;
+    transition: 0.4s;
+}
+
+.header-arrow::after{
+    content: 'V';
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 6px);
+}
+
+.header-arrow:hover{
+    background-color: #1ed6ae;
+}
+
+.nav{
+    box-sizing: border-box;
+    display: flex;
+    align-self: flex-start;
+    position: fixed;
+    padding: 0px 15px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgba(28, 40, 51, 0.7);
+    background-size: cover;
+    z-index: 2;
+}
+
+.nav-title{
+    color: #fff;
+    font-size: 24px;
+    transition: 0.4s;
+}
+
+.nav-title:hover{
+    color: #92efff;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.nav-list a{
+    font-size: 22px;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.nav-list a:hover{
+    color: #92efff;
+}
+
+.portfolio{
+    padding: 60px 0px 50px 0px;
+    text-align: center;
+}
+
+.portfolio-title{
+    margin-bottom: 8px;
+    font-size: 36px;
+}
+
+.portfolio-description{
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.grid{
+    margin: 0 auto;
+    width: 1130px; 
+}
+
+.grid-sizer{
+    width: 270px; 
+}
+
+.grid-item{
+    margin: 6px 0px 0px 8px;
+}  
+
+.contact{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/contact.png);
+    background-size: cover;
+}
+
+.contact p{
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact-link{
+    padding: 10px 25px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 25px;
+}
+
+.contact-link:hover{
+    border-color: #19bd9a;
+}
+
+.team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.slider{
+    padding: 30px 45px;
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+}
+
+.slider-item{
+    display: flex!important;
+}
+
+.slider-img{
+    width: 25%;
+}
+
+.slider-text{
+    width: 75%;
+}
+
+.slider-comment{
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #676768;
+}
+
+.slider-name{
+    margin-bottom: 5px;
+    color: #19bd9a;
+}
+
+.footer{
+    padding: 40px 20px 25px 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #1C2833;
+}
+
+.footer-title{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.footer-text{
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.footer-year{
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-icon:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width: 1260px){
+    .header-title{
+        font-size: 36px;
+    }
+
+    .header-slogan{
+        font-size: 16px;
+    }
+
+    .grid{
+        width: 320px;
+    }
+
+    .grid img, .grid-item{
+        width: 148px;
+        height: auto;
+    }
+
+    .comment-title{
+        margin-bottom: 70px;
+    }
+
+    .comment-content-wrapper{
+        flex-direction: column;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 860px){
+    .slider-item{
+        flex-direction: column;
+    }
+
+    .slider-img{
+        margin-bottom: 35px;
+        width: 100%;
+    }
+
+    .slider-img img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .slider-text{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px){
+    .nav-list{
+        width: 180px;
+    }
+
+    .nav-title{
+        font-size: 16px;
+    }
+
+    .nav-list a{
+        font-size: 15px;
+    }
+
+    .slider{
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .slider-img{
+        margin-bottom: 15px;
+    }
+}
+
